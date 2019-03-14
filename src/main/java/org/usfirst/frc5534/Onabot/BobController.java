@@ -6,7 +6,7 @@
 /*----------------------------------------------------------------------------*/
 
 /*
- * Thank you FRC 318 for creating the BobController
+ * Thank you FRC 319 for creating the BobController
  * 
 */
 
