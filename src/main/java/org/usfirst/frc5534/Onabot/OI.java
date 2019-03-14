@@ -13,12 +13,7 @@ package org.usfirst.frc5534.Onabot;
 
 import org.usfirst.frc5534.Onabot.commands.*;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
-import edu.wpi.first.wpilibj.XboxController;
-import edu.wpi.first.wpilibj.buttons.*;
-import org.usfirst.frc5534.Onabot.subsystems.*;
-
 import org.usfirst.frc5534.Onabot.BobController;
 
 
