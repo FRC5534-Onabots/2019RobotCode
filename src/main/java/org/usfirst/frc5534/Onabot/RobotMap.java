@@ -37,11 +37,15 @@ public class RobotMap {
     public static final int kElevTablePCMBackwardPort = 1;
 
     // Can ID numbers for the gripper subsystem
-    public static final int kGripperPCMForwardPort = 2;
-    public static final int kGripperPCMBackwardPort = 3;
+    public static final int kGripperPCMForwardPort = 2; // Used to OPEN the gripper
+    public static final int kGripperPCMBackwardPort = 3; // Used to CLOSE the gripper
 
     // Can ID numbers for the gripper wrist subsystem
     public static final int kGripperWristVictorID = 6;
     public static final int kGripperWristDioPort = 4;
+
+    // Can ID numbers for other items
+    public static final int kPDPCanID = 0;
+    public static final int kPCMCanID = 1;
 
 }
