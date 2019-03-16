@@ -89,6 +89,8 @@ public class OI {
         operator.xButton.whenActive(new GripperOpen());
         operator.yButton.whenActive(new GripperClose());
 
+        
+
     }
 
 
@@ -97,20 +99,39 @@ public class OI {
     }
 
     public double getDriverLeftJoystickY(){
-        return driver.getLeftStickY();
+        return driver.getLeftStickY();// <-- Return the up/down on the driver left JS 
     }
 
     public double getDriverLeftJoyStickX(){
-        return driver.getLeftStickX();
+        return driver.getLeftStickX();// <-- Return the left/right on driver left JS
     }
 
     public double getDriverRightJoyStickY(){
-        return driver.getRightStickY();
+        return driver.getRightStickY();// <-- Return the up/down on the driver right JS
+    }
+
+    public double getDriverRightJoyStickX(){
+        return driver.getRightStickX();// <-- Return the left/right on the driver right JS
     }
 
     public Joystick getOperator() {
         return operator;
     }
+
+    public double getOperatorLeftJoyStickX(){
+        return operator.getLeftStickX();
+    }
+    public double getOperatorLeftJoyStickY(){
+        return operator.getLeftStickY();
+    }
+    public double getOperatorRightJoyStickX(){
+        return operator.getRightStickX();
+    }
+    public double getOperatorRightJoyStickY(){
+        return operator.getRightStickY();
+    }
+
+
 
 }
 
