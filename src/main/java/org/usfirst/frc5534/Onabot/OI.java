@@ -21,6 +21,7 @@ import org.usfirst.frc5534.Onabot.BobController;
 /**
  * This class is the glue that binds the controls on the physical operator
  * interface to the commands and command groups that allow control of the robot.
+ * These can be on a joystick or controller, on as buttons on the drivers station.
  */
 public class OI {
     //// CREATING BUTTONS
