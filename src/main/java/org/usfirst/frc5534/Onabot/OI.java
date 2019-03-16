@@ -69,7 +69,7 @@ public class OI {
         
 
         // SmartDashboard Buttons
-        SmartDashboard.putData("Arcade Drive", new ArcadeDrive());
+        //SmartDashboard.putData("Arcade Drive", new ArcadeDrive());
         SmartDashboard.putData("Elev1 Up", new Elev1Up());
         SmartDashboard.putData("Elev1 Down", new Elev1Down());
         SmartDashboard.putData("Elev2 Up", new Elev2Up());
