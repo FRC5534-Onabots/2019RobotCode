@@ -90,15 +90,15 @@ public class Elevator1 extends Subsystem {
     /**
      * Run Elevator1 Down
      */
-    public void down(){
-        elev1MotorController.set(-0.5);
+    public void down(double speed){
+        elev1MotorController.set(speed);
     }
 
     /**
      * Run Elevator1 Up
      */
-    public void up(){
-        elev1MotorController.set(0.5);
+    public void up(double speed){
+        elev1MotorController.set(speed);
     }
 
     public void stop(){
