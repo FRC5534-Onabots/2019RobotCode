@@ -44,7 +44,7 @@ public class Elev1Up extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        Robot.elevator1.up();
+        Robot.elevator1.up(Robot.oi.getOperatorLeftJoyStickY());
     }
 
     // Make this return true when this Command no longer needs to run execute()
