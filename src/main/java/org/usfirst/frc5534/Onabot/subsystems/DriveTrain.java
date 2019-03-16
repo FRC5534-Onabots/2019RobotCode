@@ -34,7 +34,10 @@ public class DriveTrain extends Subsystem {
     private MecanumDrive mecanumDrive1;
 
 
-
+    /**
+     * DriveTrain() constructor
+     * Here we setup some stuff about our drive train.
+     */
     public DriveTrain() {
 
         frontLeft = new WPI_TalonSRX(RobotMap.kFrontLeftTalonID);
