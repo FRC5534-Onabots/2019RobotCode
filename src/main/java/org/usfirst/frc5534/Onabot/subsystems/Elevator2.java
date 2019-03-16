@@ -98,12 +98,12 @@ public class Elevator2 extends Subsystem {
         elev2MotorController.set(0);
     }
 
-    public void up(){
-        elev2MotorController.set(-0.5);
+    public void up(double speed){
+        elev2MotorController.set(speed);
     }
 
-    public void down(){
-        elev2MotorController.set(0.5);
+    public void down(double speed){
+        elev2MotorController.set(speed);
     }
 }
 
