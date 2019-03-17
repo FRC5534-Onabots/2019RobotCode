@@ -14,7 +14,7 @@ import edu.wpi.first.wpilibj.command.Command;
 public class GripperWristStop extends Command {
   public GripperWristStop() {
     // Use requires() here to declare subsystem dependencies
-    // eg. requires(chassis);
+     requires(Robot.gripperWrist);
   }
 
   // Called just before this Command runs the first time
@@ -40,7 +40,7 @@ public class GripperWristStop extends Command {
   }
 
   // Called when another command which requires one or more of the same
-  // subsystems is scheduled to run
+  // subsystems is scheduled to run%
   @Override
   protected void interrupted() {
     end();
