@@ -43,7 +43,7 @@ public class DriveTrain extends Subsystem {
         frontLeft = new WPI_TalonSRX(RobotMap.kFrontLeftTalonID);
         frontRight = new WPI_TalonSRX(RobotMap.kFrontRightTalonID);
         rearLeft = new WPI_TalonSRX(RobotMap.kRearLeftTalonID);
-        rearRight = new WPI_TalonSRX(RobotMap.kReadRightTalonID);
+        rearRight = new WPI_TalonSRX(RobotMap.kRearRightTalonID);
         
         mecanumDrive1 = new MecanumDrive(frontLeft, rearLeft,frontRight, rearRight);
         addChild("Mecanum Drive 1",mecanumDrive1);
@@ -52,8 +52,8 @@ public class DriveTrain extends Subsystem {
         mecanumDrive1.setMaxOutput(1.0);
         
         // These will have to be fiddled with a bit before the robot will drive correctly.
-        frontLeft.setInverted(true);
-        rearLeft.setInverted(true);
+        //frontRight.setInverted(true);
+        //rearRight.setInverted(true);
     }
 
     @Override
@@ -74,8 +74,8 @@ public class DriveTrain extends Subsystem {
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-    public void manualDrive(double leftStickY, double leftStickX, double rightStickX){
-        mecanumDrive1.driveCartesian(leftStickY, leftStickX, rightStickX);
+    public void manualDrive(double leftStickY, double leftStickX, double rightStickY){
+        mecanumDrive1.driveCartesian(-leftStickY, leftStickX, -rightStickY);
     }
 
     public void stop(){

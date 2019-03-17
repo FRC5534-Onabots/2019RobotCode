@@ -98,7 +98,7 @@ public class OI {
         return driver;
     }
 
-    public double getDriverLeftJoystickY(){
+    public double getDriverLeftJoyStickY(){
         return driver.getLeftStickY();// <-- Return the up/down on the driver left JS 
     }
 

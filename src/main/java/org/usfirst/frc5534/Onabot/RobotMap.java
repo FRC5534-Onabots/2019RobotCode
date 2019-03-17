@@ -16,8 +16,8 @@ import edu.wpi.first.wpilibj.DigitalOutput;
  */
 public class RobotMap {
     // USB port numbers for the xbox controllers used in OI
-    public static final int kDriverControllerPort = 0;
-    public static final int kOperatorControllerPort = 1;
+    public static final int kDriverControllerPort = 1;
+    public static final int kOperatorControllerPort = 0;
     
     // Can ID numbers for the drive train motor controllers
     public static final int kFrontLeftTalonID = 2;
