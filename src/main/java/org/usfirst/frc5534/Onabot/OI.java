@@ -131,6 +131,13 @@ public class OI {
         return operator.getRightStickY();
     }
 
+    public double getOperatorLeftTrigger(){
+        return operator.getRawAxis(2);
+    }
+
+    public double getOperatorRightTrigger(){
+        return operator.getRawAxis(3);
+    }
 
 
 }

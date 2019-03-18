@@ -74,8 +74,8 @@ public class DriveTrain extends Subsystem {
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-    public void manualDrive(double leftStickY, double leftStickX, double rightStickY){
-        mecanumDrive1.driveCartesian(-leftStickY, leftStickX, -rightStickY);
+    public void manualDrive(double leftStickY, double leftStickX, double rightStickX){
+        mecanumDrive1.driveCartesian(-leftStickY, leftStickX, -rightStickX);
     }
 
     public void stop(){
