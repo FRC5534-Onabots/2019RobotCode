@@ -131,11 +131,11 @@ public class OI {
         return operator.getRightStickY();
     }
 
-    public double getOperatorLeftTrigger(){
+    public double getOperatorLeftTrigger(){ // Should make the gripper wrist go up.
         return operator.getRawAxis(2);
     }
 
-    public double getOperatorRightTrigger(){
+    public double getOperatorRightTrigger(){ // Should make the gripper wrist go down.
         return operator.getRawAxis(3);
     }
 
