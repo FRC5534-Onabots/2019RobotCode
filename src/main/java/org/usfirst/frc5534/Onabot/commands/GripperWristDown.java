@@ -43,7 +43,8 @@ public class GripperWristDown extends Command {
     // Called repeatedly when this Command is scheduled to run
     @Override
     protected void execute() {
-        Robot.gripperWrist.wristDown();
+        System.out.println("Gripper Wrist Down Execute");
+        Robot.gripperWrist.wristDown(Robot.oi.getOperatorRightTrigger());
     }
 
     // Make this return true when this Command no longer needs to run execute()
