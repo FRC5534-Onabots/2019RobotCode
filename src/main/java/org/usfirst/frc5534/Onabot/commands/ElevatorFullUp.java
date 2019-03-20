@@ -17,8 +17,8 @@ public class ElevatorFullUp extends CommandGroup {
    */
   public ElevatorFullUp() {
 
-    addParallel(new Elev1Up());
-    addParallel(new Elev2Up());
+    //addParallel(new Elev1Up());
+    //addParallel(new Elev2Up());
 
   }
 }

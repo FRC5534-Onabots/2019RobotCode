@@ -17,6 +17,6 @@ public class ElevatorFullDown extends CommandGroup {
 
 
     addParallel(new Elev2Down());
-    addParallel(new Elev1Down());
+    addParallel(new Elev1Down(0.8));
   }
 }

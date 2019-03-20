@@ -52,8 +52,8 @@ public class DriveTrain extends Subsystem {
         mecanumDrive1.setMaxOutput(1.0);
         
         // These will have to be fiddled with a bit before the robot will drive correctly.
-        //frontRight.setInverted(true);
-        //rearRight.setInverted(true);
+        frontRight.setInverted(true);
+        rearLeft.setInverted(true);
     }
 
     @Override
@@ -75,7 +75,7 @@ public class DriveTrain extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
     public void manualDrive(double leftStickY, double leftStickX, double rightStickX){
-        mecanumDrive1.driveCartesian(-leftStickY, leftStickX, -rightStickX);
+        mecanumDrive1.driveCartesian(leftStickY, leftStickX, rightStickX);
     }
 
     public void stop(){

@@ -44,7 +44,7 @@ public class GripperWristUp extends Command {
     @Override
     protected void execute() {
         System.out.println("Gripper Wrist Up Execute)");
-        Robot.gripperWrist.wristUp(Robot.oi.getOperatorLeftTrigger());
+        Robot.gripperWrist.wristUp();
     }
 
     // Make this return true when this Command no longer needs to run execute()

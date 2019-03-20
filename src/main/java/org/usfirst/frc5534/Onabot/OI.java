@@ -70,9 +70,9 @@ public class OI {
 
         // SmartDashboard Buttons
         //SmartDashboard.putData("Arcade Drive", new ArcadeDrive());
-        SmartDashboard.putData("Elev1 Up", new Elev1Up());
-        SmartDashboard.putData("Elev1 Down", new Elev1Down());
-        SmartDashboard.putData("Elev2 Up", new Elev2Up());
+        SmartDashboard.putData("Elev1 Up", new Elev1Up(0.5));
+        SmartDashboard.putData("Elev1 Down", new Elev1Down(0.5));
+        //SmartDashboard.putData("Elev2 Up", new Elev2Up());
         SmartDashboard.putData("Elev2 Down", new Elev2Down());
         //SmartDashboard.putData("Elev Platform Forward", new ElevPlatformForward());
         //SmartDashboard.putData("Elev Platform Backwards", new ElevPlatformBackwards());
@@ -88,6 +88,18 @@ public class OI {
         driver.bButton.whenActive(new ElevPlatformRetract());
         operator.xButton.whenActive(new GripperOpen());
         operator.yButton.whenActive(new GripperClose());
+        operator.leftBumper.whenPressed(new GripperWristUp());
+        operator.leftBumper.whenReleased(new GripperWristStop());
+        operator.rightBumper.whenPressed(new GripperWristDown());
+        operator.rightBumper.whenReleased(new GripperWristStop());
+
+        if (operator.getLeftStickY() > 0.0) {
+            new Elev1Up(operator.getLeftStickY());
+        } else if (operator.getLeftStickY() < 0.0) {
+            new Elev1Down(operator.getLeftStickY());
+        }
+
+        
 
         
 

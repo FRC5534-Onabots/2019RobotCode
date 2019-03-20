@@ -34,9 +34,9 @@ public class ArcadeDrive extends Command {
     @Override
     protected void execute() {
         
-        Robot.driveTrain.manualDrive(Robot.oi.getDriverLeftJoyStickX(),
-                                     Robot.oi.getDriverLeftJoyStickY(),
-                                     Robot.oi.getDriverRightJoyStickX());
+        Robot.driveTrain.manualDrive(Robot.oi.getDriverLeftJoyStickY(),
+                                     Robot.oi.getDriverRightJoyStickX(),
+                                     -Robot.oi.getDriverLeftJoyStickX());
     
     }
 

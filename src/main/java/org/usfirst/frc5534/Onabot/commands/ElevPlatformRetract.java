@@ -17,9 +17,9 @@ public class ElevPlatformRetract extends CommandGroup {
    */
   public ElevPlatformRetract() {
 
-    addSequential(new Elev1Up(), 1);
+    addSequential(new Elev1Up(0.6), 1);
     addSequential(new ElevPlatformBackwards());
-    addSequential(new Elev1Down(), 0.5);
+    addSequential(new Elev1Down(0.6));
 
   }
 }

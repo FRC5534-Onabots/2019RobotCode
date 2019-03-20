@@ -18,9 +18,9 @@ public class ElevPlatformDeploy extends CommandGroup {
    */
   public ElevPlatformDeploy() {
 
-    addSequential(new Elev1Up(),1);
+    addSequential(new Elev1Up(0.6));
     addSequential(new ElevPlatformForward());
-    addSequential(new Elev1Down(),0.5);
+    addSequential(new Elev1Down(-0.6));
 
 
   }

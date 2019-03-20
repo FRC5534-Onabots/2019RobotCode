@@ -66,9 +66,9 @@ public class GripperWrist extends Subsystem {
      * Drives the gripper wrist motor upward while the counter is greater then
      * the tick counter for being in the top posistion.
      */
-    public void wristUp(double speed){ 
+    public void wristUp(){ 
         // While wrist counter is not at top
-        gripperWristMotorController.set(speed);
+        gripperWristMotorController.set(-0.8);
     }
 
     /**
@@ -76,9 +76,9 @@ public class GripperWrist extends Subsystem {
      * Drives the gripper wrist motor downward while the pos counter greater then
      * the bottem pos.
      */
-    public void wristDown(double speed){
+    public void wristDown(){
         // while wrist counter is not at bottem pos drive the motor down
-        gripperWristMotorController.set(speed);
+        gripperWristMotorController.set(0.8);
     }
 
     /**
@@ -95,10 +95,10 @@ public class GripperWrist extends Subsystem {
      */
     public void wristMiddle(){
         if (gripperWristCounter.get() >= wristMiddlePOS){
-            wristDown(0.5);
+            //wristDown(0.5);
         }
         else {
-            wristUp(0.5);
+            //wristUp(0.5);
         }
         
     }
