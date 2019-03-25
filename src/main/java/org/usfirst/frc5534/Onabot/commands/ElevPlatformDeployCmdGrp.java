@@ -8,18 +8,20 @@
 package org.usfirst.frc5534.Onabot.commands;
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
-public class ElevPlatformRetract extends CommandGroup {
+public class ElevPlatformDeployCmdGrp extends CommandGroup {
   /**
-   * ElevPlatformRetract
-   * This will raise Elev1 up so the rails are clear to retract
-   * Then retract the platform
-   * then lower the elev1 down
+   * ElevPlatformDeploy
+   * Will call the commands to 
+   * Raise up Elev1 for 1 sec so the platform rails are clear
+   * Then run the platform forward
+   * then lower Elev1 back down.
    */
-  public ElevPlatformRetract() {
+  public ElevPlatformDeployCmdGrp() {
 
-    addSequential(new Elev1Up(0.6), 1);
-    addSequential(new ElevPlatformBackwards());
-    addSequential(new Elev1Down(0.6));
+    addSequential(new Elev1Up(0.6));
+    addSequential(new ElevPlatformForward());
+    addSequential(new Elev1Down(-0.6));
+
 
   }
 }
