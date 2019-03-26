@@ -51,7 +51,7 @@ public class Elev1Down extends Command {
     // Make this return true when this Command no longer needs to run execute()
     @Override
     protected boolean isFinished() {
-        return false;
+        return Robot.elevator1.isBottomSwitchSet();// <-- if this returns true, then the bottem switch has been tripped, and we are at bottem.
         //return Robot.elevator1.isBottomSwitchSet();
     }
 
